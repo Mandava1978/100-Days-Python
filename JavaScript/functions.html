@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>Functions example!</title>
+    <script type="text/javascript">
+        function myFunction() {
+            document.write("This is a small function.<br />");
+        }
+        myFunction();
+        function print() {
+     console.log('printed');
+}
+
+// function anotherPrint() {
+//       print();
+//       anotherPrint(); // recursion
+// }
+function printNumber(number1, number2) {
+            var max = number1;
+            if (number2 > number1)
+                max = number2;
+            console.log('Maximal number: ' + max);
+        }
+        printNumber(-5, -10);
+        var a=10; var b=15; var c=18
+printNumber(a + b, c);
+printNumber(2 + 3, 10);
+printNumber(100, 200);
+
+function printText(number, text) {
+            switch (arguments.length) {
+                case 1: console.log('Number :' + number); break;
+                case 2:
+                    console.log('Number :' + number);
+                    console.log('Text :' + text);
+                    break;
+            }
+        }
+        printText(5); // Logs 5
+        printText(5, 'JavaScript Tutorials'); // Logs 5 and JavsScript Tutorials
+    </script>
+</head>
+<body>
+</body>
+</html>

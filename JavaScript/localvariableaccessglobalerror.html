@@ -1,0 +1,17 @@
+<html>
+<head>
+    <title>JavaScript Private Scope Variable Example</title>
+</head>
+<body>
+    <script>
+       var x = 10; //Global Scope
+       function Fun1()
+       {
+          console.log("Accessing Global Variable : " + x); 
+          var y = 20;
+       }
+       Fun1();
+       console.log("Accessing Local Variable : " + y); 
+    </script>
+</body>
+</html>

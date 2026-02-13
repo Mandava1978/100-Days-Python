@@ -1,0 +1,26 @@
+
+<html>
+<head>
+    <title>JavaScript DataType example</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+        for (var number = 0; number < 10; number++) {
+            document.write(number + " ");
+        }
+
+        // Complex for loop
+        for (var i = 1, sum = 1; i <= 128; i = i * 2, sum += i) {
+           document.write('i = ' + i + ', sum = ' + sum );
+        }
+
+var arr = [10, 20, 30, 40, 50];
+        for (var index in arr) { document.write(arr[index]) }// 10, 20, 30, 40, 50
+        var str = "welcome";
+        for (var index in str) { document.write(str[index]) }// w, e, l, c, o, m, e
+</script>
+   
+</body>
+</html>

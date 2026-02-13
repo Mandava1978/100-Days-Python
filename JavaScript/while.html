@@ -1,0 +1,55 @@
+
+<html>
+<head>
+    <title>JavaScript DataType example</title>
+</head>
+<body>
+
+<script type="text/javascript">
+        var counter = 0;
+        while (counter < 10) {
+            console.log('Number : ' + counter);
+            counter++;
+        }
+
+        var counter = 0;
+        while (counter < 10) {
+            if (counter == 5)
+                break;//break loop only if counter==5
+            console.log('Number : ' + counter);
+            counter++;
+        }
+
+        var counter = 0;
+        while (counter < 10) {
+            counter++;
+            if (counter == 5)
+                continue;//skip the code in loop only if counter==5
+            console.log('Number : ' + counter);        
+        }
+
+        outer: for (let i = 0; i <= 5; i++) {
+                console.log(i);
+            }
+
+        var counter = 0;
+        check: while (counter < 10) {
+            if (counter == 5)
+                break check;//break loop only if counter==5
+            console.log('Number : ' + counter);
+            counter++;
+        }
+
+        var counter = 0;
+        skiptest: while (counter < 10) {
+             counter++;
+            if (counter == 5)
+                continue skiptest;//skip the code in loop only if counter==5
+            console.log('Number : ' + counter);
+           
+        }
+
+</script>
+   
+</body>
+</html>

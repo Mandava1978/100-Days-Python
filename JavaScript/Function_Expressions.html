@@ -1,0 +1,30 @@
+<html>
+<head>
+</head>
+<body>
+    <script type="text/javascript">
+        function maxe(arr) {
+            var maxValue = arr[0];
+            for (var i = 1; i < arr.length; i++) {
+                maxValue = Math.max(maxValue, arr[i]);
+            }
+            return maxValue;
+                      alert(maxValue);
+            console.log(maxe.name);//Print maxe
+            console.log(maxe.length);//Print 1
+        }
+
+         var printMsg = function (msg) {
+            console.log("Message: " + msg);//Message:Hello
+        }
+        var printMsg = function printMsg(msg) {
+            console.log("Message: " + msg);//Message:Hello
+        }
+
+    </script>
+    <form>
+        <input type="button" value="click" onclick="maxe('hello')" />
+        <input type="button" value="click" onclick="printMsg('Hello')" />
+    </form>
+</body>
+</html>
